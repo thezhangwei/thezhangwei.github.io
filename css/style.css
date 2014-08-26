@@ -58,10 +58,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   background: url(../img/zwei-8bit.jpeg) center 0 no-repeat;
   background-size: 90px 90px;
   height: 90px;
-  margin: 0 auto 16px;
+  margin: 0px auto 20px;
   overflow: hidden;
   text-indent: -9999em;
   width: 90px;
+	-webkit-border-radius: 45px; /* Saf3+, Chrome */
+	border-radius: 45px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 30px;  Disabled for FF1+ */
 }
 
 .lead{

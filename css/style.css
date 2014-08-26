@@ -67,6 +67,75 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	/*-moz-border-radius: 30px;  Disabled for FF1+ */
 }
 
+/* Fancy avatar flipping stuff begin */
+.flipping-cards label{
+	width:90px;
+	height:90px;
+	cursor:pointer;
+}
+
+.flipping-cards .wrapper{
+  display:block;
+	width:90px;
+	height:90px;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-transition: all 2.50s;
+	-moz-transition: all .50s;
+	transition: all .50s;
+}
+
+.flipping-cards .wrapper span{
+  display:block;
+  width:90px;
+  height:90px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.flipping-cards label .back{
+  border-radius:10px;
+  -webkit-backface-visibility:hidden; /* Chrome and Safari */
+	-moz-backface-visibility:hidden; /* Firefox */
+	-ms-backface-visibility:hidden; /* Internet Explorer */
+
+	background-image:url(../img/zwei-8bit.jpeg);
+	background-size: 90px 90px;
+	-webkit-border-radius: 45px; /* Saf3+, Chrome */
+	border-radius: 45px; /* Opera 10.5, IE 9 */
+}
+
+.flipping-cards label .image{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  backface-visibility:hidden;
+	-webkit-backface-visibility:hidden; /* Chrome and Safari */
+	-moz-backface-visibility:hidden; /* Firefox */
+	-ms-backface-visibility:hidden; /* Internet Explorer */
+}
+
+
+.flipping-cards input[type="checkbox"]:checked + label .wrapper{
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+}
+
+label[for="item1"] .image{
+	background-image:url(../img/zwei-person.png);
+	background-size: 90px 90px;
+	-webkit-border-radius: 45px; /* Saf3+, Chrome */
+	border-radius: 45px; /* Opera 10.5, IE 9 */
+}
+
+input[type="checkbox"]{display:none;}
+
+/* Fancy avatar flipping stuff end */
+
+
 .lead{
 	font-weight: 400;
 }

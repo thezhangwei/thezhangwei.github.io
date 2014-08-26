@@ -68,13 +68,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 /* Fancy avatar flipping stuff begin */
-.flipping-cards label{
-	width:90px;
-	height:90px;
-	cursor:pointer;
+.flipping-cards label {
 }
 
-.flipping-cards .wrapper{
+.flipping-cards .wrapper {
   display:block;
 	width:90px;
 	height:90px;
@@ -88,8 +85,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	transition: all .50s;
 }
 
-.flipping-cards .wrapper span{
-  display:block;
+.flipping-cards .wrapper span {
   width:90px;
   height:90px;
   position:absolute;
@@ -97,8 +93,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
   left:0;
 }
 
-.flipping-cards label .back{
-  border-radius:10px;
+/* front avatar */
+.flipping-cards label .back {
   -webkit-backface-visibility:hidden; /* Chrome and Safari */
 	-moz-backface-visibility:hidden; /* Firefox */
 	-ms-backface-visibility:hidden; /* Internet Explorer */
@@ -109,6 +105,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	border-radius: 45px; /* Opera 10.5, IE 9 */
 }
 
+/* back avatar */
 .flipping-cards label .image{
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -116,23 +113,21 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	-webkit-backface-visibility:hidden; /* Chrome and Safari */
 	-moz-backface-visibility:hidden; /* Firefox */
 	-ms-backface-visibility:hidden; /* Internet Explorer */
-}
 
+	background-image:url(../img/zwei-person.png);
+	background-size: 90px 90px;
+	-webkit-border-radius: 45px; */ /* Saf3+, Chrome */
+	border-radius: 45px; */ /* Opera 10.5, IE 9 */
+}
 
 .flipping-cards input[type="checkbox"]:checked + label .wrapper{
   transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
 }
 
-label[for="item1"] .image{
-	background-image:url(../img/zwei-person.png);
-	background-size: 90px 90px;
-	-webkit-border-radius: 45px; /* Saf3+, Chrome */
-	border-radius: 45px; /* Opera 10.5, IE 9 */
+input[type="checkbox"]{
+	display:none;
 }
-
-input[type="checkbox"]{display:none;}
-
 /* Fancy avatar flipping stuff end */
 
 

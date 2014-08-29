@@ -254,7 +254,8 @@ Spacer
 
 #spacer1{
 	/* background-image: url(../img/spacer/1.jpg); */
-	background-color: #529abb;
+	background-image: url(../img/bg-mtn.jpg);
+	/* background-color: #529abb; */
 }
 #spacer2{
 	background-image: url(../img/spacer/2.jpg);

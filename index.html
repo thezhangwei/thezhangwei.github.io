@@ -106,12 +106,13 @@
 	</section>
 
 	  <!-- Services -->
-	 <section id="services" class="home-section bg-white">
+	 <section id="projects" class="home-section bg-white">
 		<div class="container">
 			  <div class="row">
 				  <div class="col-md-offset-2 col-md-8">
 					  <div class="section-heading">
 					    <h2>Projects</h2>
+              <p>I've worked on</p>
 					  </div>
 				  </div>
 			  </div>
@@ -121,7 +122,10 @@
             <a href="https://bitbucket.org/ssllab/zippy/" target="_blank"><img src="img/projects/zippy-logo-160.png" class="img-circle"></a>
           </div>
           <div class="col-md-6">
-            <p>ZipPy is a Python 3 implementation built using the Truffle framework.</p>
+            <p>ZipPy is a fast and lightweight Python 3 implementation built using the Truffle framework.
+              ZipPy leverages the underlying Java JIT compiler and compiles Python programs to highly optimized machine code at runtime.
+              <a href="https://bitbucket.org/ssllab/zippy/" target="_blank">Repository on Bitbucket</a>.
+              </p>
           </div>
         </div>
 
@@ -132,13 +136,24 @@
             <img src="img/projects/svm-logo-160.png" class="img-circle">
           </div>
           <div class="col-md-6">
-            <p class="left">Substrate VM or SVM is an ahead of time compiled Java Virtual Machine.
+            <p>SubstrateVM is an ahead of time compiled Java Virtual Machine developed at Oracle Labs.
               It tries to use the Graal JIT compiler as the LLVM for Java Apps.
-              Its main target is to hosted language runtimes written in Java and deliver them to the client side in a compact package.
+              Its main target is to deliver language runtimes to the client side in a compact package.
               This AOT compilation approach greatly reduces start-up time and memory footprint of the hosted program.</p>
           </div>
         </div>
 
+        <div class="line-spacer"></div>
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-2">
+            <img src="img/projects/mvm-logo-160.png" class="img-circle">
+          </div>
+          <div class="col-md-6">
+            <p>ModularVM is an extension to the Maxine VM (JVM) that enables deeper integrations with JVM language runtimes like Jython or Rhino.
+              It automatically accelerates guest language interpreters written in Java. We applied our optimizations to Jython, Rhino and JRuby on our system.</p>
+          </div>
+        </div>
 
 		</div>
 	</section>

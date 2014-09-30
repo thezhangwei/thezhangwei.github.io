@@ -262,7 +262,8 @@ Spacer
 	/* background-color: #529abb; */
 }
 #spacer2{
-	background-image: url(../img/spacer/2.jpg);
+	/* background-image: url(../img/spacer/2.jpg); */
+	background-color: #529abb;
 }
 
 

@@ -263,7 +263,8 @@ Spacer
 }
 #spacer2{
 	/* background-image: url(../img/spacer/2.jpg); */
-	background-color: #529abb;
+	background-image: url(../img/bg-mtn-2.jpg);
+	/* background-color: #529abb; */
 }
 
 
